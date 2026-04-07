@@ -1,0 +1,42 @@
+<section>
+    <div class="container">
+        <h3 id="projects">PROJEKTE</h3>
+        <p class="description">Schau dir Teile meiner Arbeit an</p>
+
+        <div class="projects-container">
+            <div *ngFor="let project of projects" class="project-card">
+
+                <div class="project-inner">
+                    <div class="project-image">
+                        <img [src]="project.image" alt="{{ project.title }}">
+                    </div>
+
+                    <div class="project-content">
+                        <h2>{{ project.title }}</h2>
+                        
+
+                        <div class="skills">
+                            <span *ngFor="let skill of project.skills" class="skill">
+                                {{ skill }}
+                            </span>
+                        </div>
+
+                        <p class="project-description">{{ project.description }}</p>
+
+                        <nav class="links">
+                            <a class="github-link" *ngIf="project.githubLink" [href]="project.githubLink"
+                                target="_blank">
+                                <img class="github-icon" src="assets/img/github.png" alt="GitHub"> GitHub Repo
+                            </a>
+
+                            <a class="live-link" *ngIf="project.liveLink" [href]="project.liveLink" target="_blank">
+                                Live Demo ->
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

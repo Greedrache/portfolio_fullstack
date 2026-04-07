@@ -1,0 +1,186 @@
+/* Section */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background-color: #2b4c70;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgb(155, 150, 150);
+}
+
+h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 32px;
+}
+
+.description {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.project-card {
+    background-color: #00233e;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.project-image {
+    width: 50%;
+    max-width: 700px;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.project-content {
+    width: 50%;
+    max-width: 500px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.skills {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #2d4661;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.live-link {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.live-link:hover {
+    background-color: white;
+    color: #00233e;
+}
+
+.github-link {
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s;
+}
+
+.github-link:hover {
+    background-color: white;
+    color: #00233e;
+}
+
+.github-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.live-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.project-description{
+    margin-top: 24px;
+    font-size: 18px;
+    color: #d8cbc0;
+}
+
+nav{
+    > a {
+        font-size: 18px;
+        color: #d8cbc0;
+        font-weight: 500;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .project-content {
+        width: 100%;
+    }
+
+    .skills {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,117 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 1500px;
+    margin: 0 auto;
+
+    >div {
+        flex: 1;
+        padding: 100px;
+
+    }
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-right: 2px solid #00233e;
+
+    p {
+        font-size: 18px;
+        color: #d8cbc0;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 700;
+        margin: 10px 0 0;
+    }
+
+    .mail-btn {
+        border: 1px solid #00233e;
+        background-color: #00233e;
+        padding: 20px 40px;
+        border-radius: 10px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        transition: all 0.2s;
+        width: fit-content;
+    }
+}
+
+input {
+    background-color: #2b4c70;
+    border: 1.5px solid #2a4a6d;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+
+    &:focus {
+        outline: none;
+        border-color: #ebebeb;
+    }
+}
+
+textarea {
+    background-color: #2b4c70;
+    border: 1.5px solid #2a4a6d;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    resize: none;
+    height: 150px;
+
+    &:focus {
+        outline: none;
+        border-color: #ebebeb;
+    }
+}
+
+.send-btn{ 
+    background-color: #00233e;
+    border: 1px solid #00233e;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: fit-content;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: #ebebeb;
+        color: #00233e;
+        cursor: pointer;
+    }
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+p{
+    font-size: 18px;
+    color: #d8cbc0;
+    font-weight: 500;
+    margin: 0;
+}

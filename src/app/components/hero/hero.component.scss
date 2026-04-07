@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.hero {
+    background-image: url('/assets/img/background.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.bio {
+    margin-top: 20px;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.role {
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.reach-out {
+    margin-top: 30px;
+    font-size: 18px;
+    background-color: #f8770e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #d16703;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+}

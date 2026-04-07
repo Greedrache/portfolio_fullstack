@@ -1,0 +1,13 @@
+<section>
+    <div class ="stacks-header">
+        <p>STACKS</p>
+        <h2>Technologien mit denen ich arbeite</h2>
+    </div>
+
+    <div class="stacks-container">
+        <div *ngFor="let stack of stacks" class="stack-card">
+            <img class="icon" [src]="stack.icon" alt="{{ stack.name }}">
+            <p class="stack-name">{{ stack.name }}</p>
+        </div>
+    </div>
+</section>

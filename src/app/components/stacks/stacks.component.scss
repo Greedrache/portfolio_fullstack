@@ -1,0 +1,77 @@
+.icon {
+    width: 80px;
+    height: 80px;
+}
+
+.stacks-header{
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-left: 100px;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    p {
+        font-size: 18px;
+        color: #d8cbc0;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 700;
+        margin: 10px 0 0;
+    }
+}
+.stack-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 150px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+}
+
+
+.stacks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 50px;
+    margin-bottom: 100px;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.stack-name {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+    .stacks-header {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .stacks-container {
+        justify-content: center;
+        margin: 0 20px;
+        margin-bottom: 100px;
+    }
+}

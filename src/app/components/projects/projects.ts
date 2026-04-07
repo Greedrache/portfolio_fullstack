@@ -1,0 +1,42 @@
+export const projects = [
+    {
+        title: "Videoflix",
+        description: "Videoflix ist ein vollwertiger Video-Streaming-Dienst mit Fokus auf Performance und Sicherheit. Neben klassischer Videowiedergabe bietet die Plattform Features wie Benutzerverwaltung und Zwei-Faktor-Authentifizierung. Das Backend wurde mit Django umgesetzt und durch Technologien wie Redis und Docker skalierbar gemacht.",
+        image: "assets/img/videoflix.png",
+        liveLink: "https://tim-thiele.de/videoflix",
+        githubLink: "https://github.com/Greedrache/Videoflix",
+        skills: ["Django", "Python", "Docker", "PostgreSQL", "Redis", "Linux", "Git"],
+    },
+    {
+        title: "Join",
+        description: "Join ist eine übersichtliche Task-Management-App zur Organisation von Projekten und täglichen Aufgaben. Der Fokus liegt auf einer intuitiven Benutzeroberfläche und klaren Workflows. Durch die Nutzung von Firebase werden Daten in Echtzeit synchronisiert.",
+        image: "assets/img/join.png",
+        liveLink: "https://tim-thiele.de/join",
+        githubLink: "https://github.com/Greedrache/Join",
+        skills: ["HTML", "CSS", "JavaScript", "Firebase", "Git"],
+    },
+    {
+        title: "Coderr",
+        description: "Coderr ist eine Plattform zur Vermittlung von Freelance-Dienstleistungen zwischen Kunden und Entwicklern. Nutzer können Angebote erstellen, durchsuchen und miteinander interagieren. Das Backend basiert auf Django und sorgt für eine strukturierte und skalierbare Datenverwaltung.",
+        image: "assets/img/coder.png",
+        liveLink: "https://tim-thiele.de/coderr",
+        githubLink: "https://github.com/Greedrache/Coderr",
+        skills: ["Django", "Python", "MySQL", "Git"],
+    },
+    {
+        title: "MVP Politik",
+        description: "MVP Politik ist eine Plattform zur Darstellung und Analyse politischer Inhalte und Positionen. Ziel ist es, komplexe Themen verständlich und strukturiert aufzubereiten. Der Fokus liegt auf Klarheit, Benutzerfreundlichkeit und einer sauberen Frontend-Architektur.",
+        image: "assets/img/mvp.png",
+        liveLink: "https://mvp-politik.de/",
+        githubLink: "https://github.com/Greedrache/MVP",
+        skills: ["HTML", "CSS", "JavaScript", "Git"],
+    },
+    {
+        title: "El Pollo Loco",
+        description: "El Pollo Loco ist ein 2D-Browser-Spiel mit eigenen Animationen und einfachen Game-Mechaniken. Der Fokus lag auf der Umsetzung von Bewegungsabläufen, Kollisionen und Spiellogik im Frontend. Das Projekt zeigt den kreativen Umgang mit JavaScript im Bereich Game Development.",
+        image: "assets/img/pololoco.png",
+        liveLink: "https://tim-thiele.de/elpolloloco",
+        githubLink: "https://github.com/Greedrache/ElPolloLoco",
+        skills: ["HTML", "CSS", "JavaScript", "Git"],
+    },
+];
