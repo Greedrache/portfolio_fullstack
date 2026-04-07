@@ -7,7 +7,7 @@
     max-width: 1500px;
     margin: 0 auto;
 
-    >div {
+    >div, >form {
         flex: 1;
         padding: 100px;
 
@@ -124,12 +124,18 @@ p{
 }
 
 
+.status-msg {
+    margin-top: 15px;
+    font-size: 16px;
+    color: white;
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
         padding: 20px;
 
-        >div {
+        >div, >form {
             padding: 20px;
         }
     }

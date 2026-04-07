@@ -4,13 +4,13 @@
     </div>
 
     <nav class="nav-links" id="nav">
-        <a href="#hero">Home</a>
-        <a href="#projects">Projekte</a>
-        <a href="#about">Über mich</a>
+        <a routerLink="/" fragment="hero">Home</a>
+        <a routerLink="/" fragment="projects">Projekte</a>
+        <a routerLink="/" fragment="about">Ãœber mich</a>
     </nav>
 
     <div class="theme-toggle">
-        <a class="orange-btn" href="#contact">Schreib mir</a>
+        <a class="orange-btn" routerLink="/" fragment="contact">Schreib mir</a>
 
         <button class="burger" id="burger" (click)="toggleMenu()">
             ☰

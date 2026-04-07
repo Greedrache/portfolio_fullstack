@@ -7,17 +7,18 @@
                 Wenn du Fragen an mich hast oder mit mir zusammenarbeiten möchtest, schreib mir eine
                 Nachricht!
             </p>
-            <button class="mail-btn"> <img class="icon" src="/assets/img/mail.png" alt="">E-Mail</button>
+            <a href="mailto:thieletim15@gmail.com" class="mail-btn" style="text-decoration: none; display: inline-block;"> <img class="icon" src="/assets/img/mail.png" alt="">E-Mail</a>
         </div>
-           <div class="contact-form">
+        <form class="contact-form" (ngSubmit)="onSubmit()" #contactForm="ngForm">
             <p>Name</p>
-            <input type="text" placeholder="Dein Name">
+            <input type="text" name="name" [(ngModel)]="contactData.name" placeholder="Dein Name" required>
             <p>E-Mail</p>
-            <input type="email" placeholder="Deine E-Mail">
+            <input type="email" name="email" [(ngModel)]="contactData.email" placeholder="Deine E-Mail" required>
             <p>Nachricht</p>
-            <textarea placeholder="Deine Nachricht"></textarea>
-            <button class="send-btn">Absenden</button>
-        </div>
+            <textarea name="message" [(ngModel)]="contactData.message" placeholder="Deine Nachricht" required></textarea>
+            <button type="submit" class="send-btn" [disabled]="contactForm.invalid || isSending">{{ isSending ? 'Wird gesendet...' : 'Absenden' }}</button>
+            <p class="status-msg" *ngIf="statusMessage">{{ statusMessage }}</p>
+        </form>
 
 
     </div>
