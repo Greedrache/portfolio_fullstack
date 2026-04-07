@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  toggleMenu() {
+    const nav = document.getElementById("nav");
+    if (nav) {
+      nav.classList.toggle("active");
+    }
+  }
+
+}

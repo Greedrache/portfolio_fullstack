@@ -7,9 +7,8 @@
     text-align: left;
     margin-bottom: 40px;
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 50px;
     max-width: 1500px;
-    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 40px;
 
@@ -66,7 +65,10 @@
 @media (max-width: 768px) {
     .stacks-header {
         text-align: center;
-        margin-left: 0;
+        margin: 20px;
+        h2 {
+            font-size: 28px;
+        }
     }
 
     .stacks-container {

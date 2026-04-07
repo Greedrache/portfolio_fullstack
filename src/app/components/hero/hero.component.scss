@@ -49,3 +49,21 @@ h1 {
         transition: background-color 0.3s;
     }
 }
+
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .bio {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .role {
+        font-size: 14px;
+        padding: 3px 10px;
+    }
+}
