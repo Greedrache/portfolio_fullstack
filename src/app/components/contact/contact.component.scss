@@ -37,8 +37,10 @@
         border: 1px solid #00233e;
         background-color: #00233e;
         padding: 20px 40px;
+        margin-top: 20px;
         border-radius: 10px;
-        width: 80%;
+        width: 600px;
+        min-width: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -47,7 +49,12 @@
         font-size: 18px;
         font-weight: 500;
         transition: all 0.2s;
-        width: fit-content;
+
+        &:hover {
+            background-color: #ebebeb;
+            color: #00233e;
+            cursor: pointer;
+        }
     }
 }
 

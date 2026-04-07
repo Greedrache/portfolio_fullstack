@@ -1,7 +1,9 @@
 import { Routes } from '@angular/router';
-import { HeroComponent } from './components/hero/hero.component';
+import { Main } from './pages/main/main';
+import { ImprintComponent } from './pages/imprint/imprint.component';
 
 
 export const routes: Routes = [
-   { path: '', component: HeroComponent },
+   { path: '', component: Main },
+   { path: 'imprint', component: ImprintComponent },
 ];
