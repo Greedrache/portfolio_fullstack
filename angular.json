@@ -29,7 +29,8 @@
                 "glob": "**/*",
                 "input": "public"
               },
-              "src/assets"
+              "src/assets",
+              "src/sendMail.php"
             ],
             "styles": [
               "src/styles.scss"

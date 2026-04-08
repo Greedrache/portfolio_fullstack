@@ -15,12 +15,10 @@
 
 .stacks-header{
     text-align: left;
-    margin-bottom: 40px;
-    margin-top: 50px;
-    margin-left: 50px;
     max-width: 1500px;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin: 50px auto 40px auto;
+    padding: 0 50px;
+    width: 100%;
 
     p {
         font-size: 18px;
@@ -75,7 +73,6 @@
 @media (max-width: 768px) {
     .stacks-header {
         text-align: center;
-        margin: 20px;
         h2 {
             font-size: 28px;
         }
