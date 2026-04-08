@@ -158,6 +158,36 @@ p{
     color: var(--contact-status-text);
 }
 
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+
+        >div, >form {
+            padding: 20px;
+        }
+    }
+
+    .contact-info {
+        border-right: none;
+        border-bottom: 2px solid var(--contact-border);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        align-items: center;
+        text-align: center;
+
+        .mail-btn {
+            width: 100%;
+            max-width: 400px;
+        }
+    }
+
+    .send-btn {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;

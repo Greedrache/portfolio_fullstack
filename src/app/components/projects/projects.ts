@@ -1,7 +1,7 @@
 export const projects = [
     {
         title: "Videoflix",
-        description: "Videoflix ist ein vollwertiger Video-Streaming-Dienst mit Fokus auf Performance und Sicherheit. Neben klassischer Videowiedergabe bietet die Plattform Features wie Benutzerverwaltung und Zwei-Faktor-Authentifizierung. Das Backend wurde mit Django umgesetzt und durch Technologien wie Redis und Docker skalierbar gemacht.",
+        description: "Videoflix ist ein vollwertiger Video-Streaming-Dienst mit Fokus auf Performance und Sicherheit. Neben klassischer Videowiedergabe bietet die Plattform Features wie Benutzerverwaltung und Zwei-Faktor-Authentifizierung. ",
         image: "assets/img/videoflix.png",
         liveLink: "https://tim-thiele.de/videoflix",
         githubLink: "https://github.com/Greedrache/Videoflix",
