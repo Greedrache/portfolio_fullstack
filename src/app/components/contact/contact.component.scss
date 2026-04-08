@@ -1,3 +1,31 @@
+:host {
+    --contact-border: #00233e;
+    --contact-text-muted: #d8cbc0;
+    --contact-btn-bg: #00233e;
+    --contact-btn-text: white;
+    --contact-btn-hover-bg: #ebebeb;
+    --contact-btn-hover-text: #00233e;
+    --contact-input-bg: #2b4c70;
+    --contact-input-border: #2a4a6d;
+    --contact-input-text: white;
+    --contact-input-focus: #ebebeb;
+    --contact-status-text: white;
+}
+
+:host-context(.light-theme) {
+    --contact-border: #cccccc;
+    --contact-text-muted: #333333;
+    --contact-btn-bg: #e2e8f0;
+    --contact-btn-text: black;
+    --contact-btn-hover-bg: #cccccc;
+    --contact-btn-hover-text: black;
+    --contact-input-bg: #ffffff;
+    --contact-input-border: #cccccc;
+    --contact-input-text: black;
+    --contact-input-focus: #00233e;
+    --contact-status-text: black;
+}
+
 .container{
     display: flex;
     flex-direction: row;
@@ -18,11 +46,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border-right: 2px solid #00233e;
+    border-right: 2px solid var(--contact-border);
 
     p {
         font-size: 18px;
-        color: #d8cbc0;
+        color: var(--contact-text-muted);
         font-weight: 500;
         margin: 0;
     }
@@ -34,8 +62,8 @@
     }
 
     .mail-btn {
-        border: 1px solid #00233e;
-        background-color: #00233e;
+        border: 1px solid var(--contact-btn-bg);
+        background-color: var(--contact-btn-bg);
         padding: 20px 40px;
         margin-top: 20px;
         border-radius: 10px;
@@ -45,41 +73,41 @@
         align-items: center;
         justify-content: center;
 
-        color: white;
+        color: var(--contact-btn-text);
         font-size: 18px;
         font-weight: 500;
         transition: all 0.2s;
 
         &:hover {
-            background-color: #ebebeb;
-            color: #00233e;
+            background-color: var(--contact-btn-hover-bg);
+            color: var(--contact-btn-hover-text);
             cursor: pointer;
         }
     }
 }
 
 input {
-    background-color: #2b4c70;
-    border: 1.5px solid #2a4a6d;
+    background-color: var(--contact-input-bg);
+    border: 1.5px solid var(--contact-input-border);
     border-radius: 5px;
     padding: 10px;
-    color: white;
+    color: var(--contact-input-text);
     font-size: 16px;
     width: 100%;
     margin-bottom: 15px;
 
     &:focus {
         outline: none;
-        border-color: #ebebeb;
+        border-color: var(--contact-input-focus);
     }
 }
 
 textarea {
-    background-color: #2b4c70;
-    border: 1.5px solid #2a4a6d;
+    background-color: var(--contact-input-bg);
+    border: 1.5px solid var(--contact-input-border);
     border-radius: 10px;
     padding: 10px;
-    color: white;
+    color: var(--contact-input-text);
     font-size: 16px;
     width: 100%;
     resize: none;
@@ -87,25 +115,25 @@ textarea {
 
     &:focus {
         outline: none;
-        border-color: #ebebeb;
+        border-color: var(--contact-input-focus);
     }
 }
 
 .send-btn{ 
-    background-color: #00233e;
-    border: 1px solid #00233e;
+    background-color: var(--contact-btn-bg);
+    border: 1px solid var(--contact-btn-bg);
     padding: 10px 20px;
     border-radius: 20px;
     width: fit-content;
-    color: white;
+    color: var(--contact-btn-text);
     font-size: 18px;
     font-weight: 500;
     margin-top: 20px;
     transition: all 0.2s;
 
     &:hover {
-        background-color: #ebebeb;
-        color: #00233e;
+        background-color: var(--contact-btn-hover-bg);
+        color: var(--contact-btn-hover-text);
         cursor: pointer;
     }
 }
@@ -118,7 +146,7 @@ textarea {
 
 p{
     font-size: 18px;
-    color: #d8cbc0;
+    color: var(--contact-text-muted);
     font-weight: 500;
     margin: 0;
 }
@@ -127,7 +155,7 @@ p{
 .status-msg {
     margin-top: 15px;
     font-size: 16px;
-    color: white;
+    color: var(--contact-status-text);
 }
 
 @media (max-width: 768px) {
@@ -142,7 +170,7 @@ p{
 
     .contact-info {
         border-right: none;
-        border-bottom: 2px solid #00233e;
+        border-bottom: 2px solid var(--contact-border);
         padding-bottom: 20px;
         margin-bottom: 20px;
         align-items: center;

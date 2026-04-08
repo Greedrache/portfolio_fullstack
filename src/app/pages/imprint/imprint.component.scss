@@ -1,8 +1,34 @@
+:host {
+    --imprint-bg: #01090f;
+    --imprint-text: #e6f1ff;
+    --imprint-title: #ffd000;
+    --imprint-h2: #7ccfff;
+    --imprint-p: #cbd5e1;
+    --imprint-link: #ffd000;
+    --imprint-link-hover: #ffe066;
+    --imprint-container-bg: #00233e;
+    --imprint-container-border: #2a4a6d;
+    --imprint-container-shadow: rgba(0, 0, 0, 0.4);
+}
+
+:host-context(.light-theme) {
+    --imprint-bg: #ffffff;
+    --imprint-text: #333333;
+    --imprint-title: #ffb300;
+    --imprint-h2: #007bff;
+    --imprint-p: #444444;
+    --imprint-link: #ffb300;
+    --imprint-link-hover: #ff9900;
+    --imprint-container-bg: #f9f9f9;
+    --imprint-container-border: #cccccc;
+    --imprint-container-shadow: rgba(0, 0, 0, 0.1);
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #01090f;
-  color: #e6f1ff;
+  background-color: var(--imprint-bg);
+  color: var(--imprint-text);
   display: flex;
   padding: 6rem;
   align-items: center;
@@ -14,7 +40,7 @@ body {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #ffd000;
+  color: var(--imprint-title);
   text-align: center;
   margin-top: 100px;
 }
@@ -22,24 +48,24 @@ h1 {
 h2 {
   margin-top: 2rem;
   font-size: 1.3rem;
-  color: #7ccfff;
-  border-left: 3px solid #ffd000;
+  color: var(--imprint-h2);
+  border-left: 3px solid var(--imprint-title);
   padding-left: 10px;
 }
 
 p {
   line-height: 1.6;
-  color: #cbd5e1;
+  color: var(--imprint-p);
 }
 
 a {
-  color: #ffd000;
+  color: var(--imprint-link);
   text-decoration: none;
   transition: 0.2s;
 
   &:hover {
     text-decoration: underline;
-    color: #ffe066;
+    color: var(--imprint-link-hover);
   }
 }
 
@@ -51,10 +77,18 @@ body > * {
 
 body {
   > * {
-    background: #00233e;
-    border: 1px solid #2a4a6d;
+    background: var(--imprint-container-bg);
+    border: 1px solid var(--imprint-container-border);
     border-radius: 20px;
     margin: 2rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px var(--imprint-container-shadow);
   }
+}
+
+.imprint-container {
+    background-color: var(--imprint-container-bg);
+    border: 1px solid var(--imprint-container-border);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 20px var(--imprint-container-shadow);
 }

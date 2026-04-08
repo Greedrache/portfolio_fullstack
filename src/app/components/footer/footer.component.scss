@@ -1,11 +1,38 @@
+:host {
+    --footer-bg: #01090f;
+    --footer-text: #ffffff;
+    --footer-border: #333;
+    --footer-link: #ffffff;
+    --footer-link-hover: #1e90ff;
+}
+
+:host-context(.light-theme) {
+    --footer-bg: #f9f9f9;
+    --footer-text: #333333;
+    --footer-border: #cccccc;
+    --footer-link: #333333;
+    --footer-link-hover: #007bff;
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: #01090f;
-    color: #ffffff;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
     font-size: 14px;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--footer-border);
     margin-top: 2rem;
+
+    a {
+        color: var(--footer-link) !important;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+
+        &:hover {
+            color: var(--footer-link-hover) !important;
+        }
+    }
 }

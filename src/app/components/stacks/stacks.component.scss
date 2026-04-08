@@ -1,3 +1,13 @@
+:host {
+    --stack-border: white;
+    --stack-text: #d8cbc0;
+}
+
+:host-context(.light-theme) {
+    --stack-border: black;
+    --stack-text: #333333;
+}
+
 .icon {
     width: 80px;
     height: 80px;
@@ -14,7 +24,7 @@
 
     p {
         font-size: 18px;
-        color: #d8cbc0;
+        color: var(--stack-text);
         font-weight: 500;
         margin: 0;
     }
@@ -30,7 +40,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    border: 1px solid white;
+    border: 2px solid var(--stack-border);
     padding: 20px;
     border-radius: 20px;
     width: 150px;

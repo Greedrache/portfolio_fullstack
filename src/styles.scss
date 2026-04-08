@@ -6,15 +6,29 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #ffb300;
+  --secondary-color: #0a0a0a;
+  --background-color: #001122;
+  --text-color: #ffffff;
+}
+
+.light-theme {
+  --primary-color: #ffb300;
+  --secondary-color: #0a0a0a;
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #001122;
-  color: white;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
 }
 
 html {
@@ -30,17 +44,17 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a; 
+  background: var(--secondary-color); 
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #ffd000, #ffb300); 
+  background: linear-gradient(180deg, var(--primary-color), var(--primary-color)); 
   border-radius: 10px;
   transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #ffe066, #ffc107);
+  background: linear-gradient(180deg, var(--primary-color), var(--primary-color));
   transform: scale(1.05);
 }
