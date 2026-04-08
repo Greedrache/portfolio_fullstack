@@ -25,7 +25,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content .= "Email: $email\n\n";
     $email_content .= "Message:\n$message\n";
 
-    $email_headers = "From: $name <$email>";
+    $domain = isset($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : 'portfolio.local';
+    $email_headers = "From: noreply@$domain\r\n";
+    
+    $email_headers .= "Reply-To: $email\r\n";
+    $email_headers .= "X-Mailer: PHP/" . phpversion();
 
     if (mail($recipient, $subject, $email_content, $email_headers)) {
         http_response_code(200);
