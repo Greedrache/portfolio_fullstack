@@ -18,6 +18,7 @@ export const projects = [
         title: "Coderr",
         description: "Coderr ist eine Plattform zur Vermittlung von Freelance-Dienstleistungen zwischen Kunden und Entwicklern. Nutzer können Angebote erstellen, durchsuchen und miteinander interagieren. Das Backend basiert auf Django und sorgt für eine strukturierte und skalierbare Datenverwaltung.",
         image: "assets/img/coder.png",
+        liveLink: "https://tim-thiele.de/coderr",
         githubLink: "https://github.com/Greedrache/Coderr",
         skills: ["Django", "Python", "MySQL", "Git"],
     },
