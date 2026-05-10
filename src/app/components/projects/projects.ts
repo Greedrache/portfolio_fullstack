@@ -38,4 +38,12 @@ export const projects = [
         githubLink: "https://github.com/Greedrache/ElPolloLoco",
         skills: ["HTML", "CSS", "JavaScript", "Git"],
     },
+       {
+        title: "Vorgath",
+        description: "Ein packendes Jump-and-Run-Adventure in JavaScript. Mit einem Fokus auf saubere Software-Architektur (OOP) bietet Vorgath handgezeichnete Animationen, ein spannendes Leveldesign und interaktive NPCs. Beweise dein Geschick und finde den Schatz der Burg!",
+        image: "assets/img/vorgath.jpg",
+        liveLink: "https://tim-thiele.de/vorgath",
+        githubLink: "https://github.com/Greedrache/vorgath",
+        skills: ["HTML", "CSS", "JavaScript", "Git"],
+    },
 ];
