@@ -60,6 +60,10 @@ export const stacks = [
         icon: "assets/img/api.png",
     },
     {
+        name: "Redis",
+        icon: "assets/img/redis.png",
+    },
+    {
         name: "Figma",
         icon: "assets/img/figma.png",
     },

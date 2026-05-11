@@ -23,6 +23,14 @@ export const projects = [
         skills: ["Django", "Python", "MySQL", "Git"],
     },
     {
+        title: "Vorgath",
+        description: "Ein packendes Jump-and-Run-Adventure in JavaScript. Mit einem Fokus auf saubere Software-Architektur (OOP) bietet Vorgath handgezeichnete Animationen, ein spannendes Leveldesign und interaktive NPCs. Beweise dein Geschick und finde den Schatz der Burg!",
+        image: "assets/img/vorgath.jpg",
+        liveLink: "https://tim-thiele.de/vorgath",
+        githubLink: "https://github.com/Greedrache/vorgath",
+        skills: ["HTML", "CSS", "JavaScript", "Git"],
+    },
+    {
         title: "MVP Politik",
         description: "MVP Politik ist eine Plattform zur Darstellung und Analyse politischer Inhalte und Positionen. Ziel ist es, komplexe Themen verständlich und strukturiert aufzubereiten. Der Fokus liegt auf Klarheit, Benutzerfreundlichkeit und einer sauberen Frontend-Architektur.",
         image: "assets/img/mvp.png",
@@ -36,14 +44,6 @@ export const projects = [
         image: "assets/img/pololoco.png",
         liveLink: "https://tim-thiele.de/elpolloloco",
         githubLink: "https://github.com/Greedrache/ElPolloLoco",
-        skills: ["HTML", "CSS", "JavaScript", "Git"],
-    },
-       {
-        title: "Vorgath",
-        description: "Ein packendes Jump-and-Run-Adventure in JavaScript. Mit einem Fokus auf saubere Software-Architektur (OOP) bietet Vorgath handgezeichnete Animationen, ein spannendes Leveldesign und interaktive NPCs. Beweise dein Geschick und finde den Schatz der Burg!",
-        image: "assets/img/vorgath.jpg",
-        liveLink: "https://tim-thiele.de/vorgath",
-        githubLink: "https://github.com/Greedrache/vorgath",
         skills: ["HTML", "CSS", "JavaScript", "Git"],
     },
 ];
