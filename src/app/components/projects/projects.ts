@@ -24,7 +24,7 @@ export const projects = [
     },
     {
         title: "Vorgath",
-        description: "Ein packendes Jump-and-Run-Adventure in JavaScript. Mit einem Fokus auf saubere Software-Architektur (OOP) bietet Vorgath handgezeichnete Animationen, ein spannendes Leveldesign und interaktive NPCs. Beweise dein Geschick und finde den Schatz der Burg!",
+        description: "Ein Action-Adventure aus der Vogelperspektive in JavaScript. Mit sauberer OOP-Architektur steuerst du einen Ritter durch eine handgezeichnete Welt, erkundest die Burg, löst Rätsel und kämpfst gegen Gegner. Finde den Schatz im Herzen der Festung!",
         image: "assets/img/vorgath.jpg",
         liveLink: "https://tim-thiele.de/vorgath",
         githubLink: "https://github.com/Greedrache/vorgath",
