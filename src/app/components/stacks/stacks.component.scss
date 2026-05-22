@@ -69,6 +69,12 @@
     font-weight: 500;
 }
 
+@media (max-width: 1400px) {
+    .stacks-container {
+        margin-right: 50px;
+        margin-left: 50px;;
+    }
+}
 
 @media (max-width: 768px) {
     .stacks-header {

@@ -3,6 +3,7 @@
     --about-container-bg: #00233e;
     --about-border: #2a4a6d;
     --about-overlay-bg: rgba(0, 35, 62, 0.5);
+    --about-bold-font: rgb(255 247 30);
 }
 
 :host-context(.light-theme) {
@@ -10,6 +11,7 @@
     --about-container-bg: #ffffff;
     --about-border: #cccccc;
     --about-overlay-bg: rgba(255, 255, 255, 0.5);
+    --about-bold-font: rgb(0 55 255);
 }
 
 section {
@@ -23,6 +25,11 @@ section {
     gap: 2rem;
 
 
+}
+
+.bold {
+    font-weight: bold;
+    color: var(--about-bold-font);
 }
 
 .container {
