@@ -12,7 +12,7 @@ export const stacks = [
         icon: "assets/img/js.png",
     },
     {
-        name: "Typescript",
+        name: "TypeScript",
         icon: "assets/img/ts.png",
     },
     {
@@ -56,7 +56,7 @@ export const stacks = [
         icon: "assets/img/mysql.png",
     },
     {
-        name: "Rest-API",
+        name: "REST-API",
         icon: "assets/img/api.png",
     },
     {
